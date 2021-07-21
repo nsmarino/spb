@@ -7,14 +7,17 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    <title>{{ page_title }}</title>
+    <title>Sweet Pickle Books | {{ page_title }}</title>
     <meta name="description" content="{{ page_description | escape }}">
     {{ content_for_header }}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body>
+    {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
+    {% section 'footer' %}
   </body>
 </html>
