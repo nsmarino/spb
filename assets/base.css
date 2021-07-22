@@ -10,10 +10,17 @@ html {
 }
 
 :root {
+  --base-fg: #018136;
+  --accent-fg: #069648;
+  --base-bg: #F4F4F4;
+
+  --mono: monospace;
+  --serif: serif;
+  --sans: sans-serif;
 
 }
 
 body {
-  background-color: aqua;
-  margin: 0;
+  margin: 0 auto;
+  width: 67rem;
 }

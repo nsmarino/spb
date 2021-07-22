@@ -1,0 +1,21 @@
+<section>
+  <h2>{{ product.title }}</h2>
+  <p>
+    {%- if product.metafields.custom_fields.subtitle -%}
+      {{product.metafields.custom_fields.subtitle}}
+      {%- else -%} Sweet Pickle Books
+    {%- endif -%}
+  </p>
+  <p>{{product.description}}</p>
+  <p>{{product.price | money }}</p>
+  <button>Add to cart</button>
+  <ul>
+    <li>metadata - tshirt info</li>
+    <li>metadata - tshirt info</li>
+    <li>metadata - tshirt info</li>
+    <li>metadata - tshirt info</li>
+  </ul>
+</section>
+<section>
+  <img src="" alt="image of shirt">
+</section>

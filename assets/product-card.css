@@ -1,0 +1,26 @@
+.product-card {
+  color: var(--base-fg);
+  font-family: var(--mono);
+  display: block;
+  border: 1px dashed var(--base-fg);
+}
+
+.product-card-img-wrapper {
+  background-color: var(--base-bg);
+  border-radius: 23px;
+  width: 33rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-img-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.product-card-caption {
+  display: flex;
+  justify-content: space-between;
+}

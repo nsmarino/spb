@@ -1,0 +1,14 @@
+.layoutHeader {
+  display: flex;
+  border-bottom: 1px solid var(--base-fg);
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--base-fg);
+}
+
+a {
+  margin: 1rem;
+}

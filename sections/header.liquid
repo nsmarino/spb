@@ -1,3 +1,10 @@
-<header>
-  <h1>header placeholder</h1>
+{{ 'header.css' | asset_url | stylesheet_tag }}
+
+<header class="layoutHeader">
+  <a href="/"><h1>Sweet Pickle Books</h1></a>
+  {% for link in linklists.main-menu.links %}
+    <a href="{{ link.url }}">{{ link.title }}</a>
+  {% endfor %}
+  <button>search</button>
+  <button>cart [{{ cart.item_count }}]</button>
 </header>

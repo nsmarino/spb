@@ -1,0 +1,26 @@
+{{ 'product-grid.css' | asset_url | stylesheet_tag }}
+
+<section class='product-grid-wrapper'>
+  <header class="gridHeader">
+    <nav>
+      <div>
+       <p>Sort By:</p>
+      <button>Relevance</button>
+      <button>New Arrivals</button>
+      <button>Price: Low to High</button>
+      <button>Price: High to Low</button> 
+      </div>
+    <div>
+    <button>All</button>
+    <button>Used Books</button>
+    <button>Rare Books</button>
+    <button>Merch</button>
+    <button>Pickles</button></div>
+    </nav>  
+  </header>
+  <ul class="product-grid">
+  {%- for product in collection.products -%}
+    {% render 'product-card', product: product %}
+  {%- endfor -%}
+  </ul>
+</section>

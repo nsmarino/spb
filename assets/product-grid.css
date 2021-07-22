@@ -1,0 +1,12 @@
+.product-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-grid {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}

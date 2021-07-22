@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "product-grid"
+      "type": "about"
     }
   },
   "order": [

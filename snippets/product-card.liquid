@@ -1,0 +1,26 @@
+{{ 'product-card.css' | asset_url | stylesheet_tag }}
+
+<li class="product-card">
+  <a href="{{ product.url | default: '#' }}">
+
+  <script>console.log('{{product | json }}')</script>
+  <div class="product-card-img-wrapper">
+    <img src="{{ product.featured_image | img_url: '500x' }}" alt="{{ product.featured_image | image_url }}">
+  </div>
+  <div class="product-card-caption">
+    <div class="product-card-caption-text">
+      <p>{{ product.title }}</p>
+      <p>
+        {%- if product.metafields.custom_fields.subtitle -%}
+          {{product.metafields.custom_fields.subtitle}}
+          {%- else -%} Sweet Pickle Books
+        {%- endif -%}
+      </p>
+    </div>
+    <div class="product-card-caption-info">
+      <p>$00</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+  </a>
+</li>
